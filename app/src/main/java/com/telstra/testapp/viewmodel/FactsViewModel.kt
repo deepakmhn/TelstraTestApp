@@ -42,4 +42,9 @@ class FactsViewModel @Inject constructor(
                     })
         )
     }
+
+    override fun onCleared() {
+        super.onCleared()
+        compositeDisposable.clear()
+    }
 }
